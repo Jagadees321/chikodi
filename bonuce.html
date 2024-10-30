@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Bouncing and Moving Animation</title>
+  <style>
+    /* Basic styling for the circle */
+    .bouncing-circle {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      animation: bounce 10s infinite alternate linear;
+    }
+
+    /* Animation keyframes */
+    @keyframes bounce {
+      0% {
+        transform: translate(0px, 0); /* Start at the bottom-left */
+      }
+      10% {
+        transform: translate(50px, -150px); /* Move to the right and up */
+      }
+      20% {
+        transform: translate(100px, 0); /* Reach the center at the bottom */
+      }
+      30% {
+        transform: translate(150px, -150px); /* Move further right and up */
+      }
+      40% {
+        transform: translate(200px, 0); /* End at the bottom-right */
+      }
+      
+      50% {
+        transform: translate(250px, -150px); /* Move to the right and up */
+      }
+      60% {
+        transform: translate(300px, 0); /* Reach the center at the bottom */
+      }
+      70% {
+        transform: translate(350px, -150px); /* Move further right and up */
+      }
+      80% {
+        transform: translate(400px, 0); /* End at the bottom-right */
+      }
+      90% {
+        transform: translate(450px, -150px); /* Move further right and up */
+      }
+      100%{
+        
+        transform: translate(500px, 0); /* Start at the bottom-left */
+    
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bouncing-circle"></div>
+</body>
+</html>

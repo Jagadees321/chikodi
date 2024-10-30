@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .c1{
+            height: 200px;
+            width: 200px;
+            border: 1px solid #5d484825;
+            border-top: 3px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            animation: r 5s linear infinite;
+        }
+        .c2{
+            height: 130px;
+            width: 130px;
+            border: 1px solid #e9adad25;
+            border-top: 3px solid rgb(0, 76, 255);
+            border-radius: 50%;
+            animation: r 5s linear infinite;
+        }
+        @keyframes r {
+            from{
+                transform: rotate(0deg);
+                transition: 2s;
+                box-shadow: 5px 5px 20px rgb(9, 255, 0);
+            }
+            to{
+                transform: rotate(360deg);
+                transform: 2s;
+                box-shadow: 5px 5px 20px rgb(9, 255, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="c1">
+            <div class="c2"></div>
+        </div>
+    </div>
+</body>
+</html>
